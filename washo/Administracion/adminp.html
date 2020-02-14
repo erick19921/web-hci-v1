@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en" >
+<head>
+<meta charset="utf-8">
+<title>Administracion</title>
+<link href="Cssa/simpleGridTemplate.css" rel="stylesheet" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<div class="topnav topnav-Titulo">
+		  <form action="../../index.html" methos="post">
+  <button class="btn-close" float="center" style="font-size:150%" id="btnInicio" >Cerrar Sesión</button>
+			  
+			   
+			  
+  
+ <h3>Administracion de Prevenciones</h3>
+
+</div>
+ </form>
+<div class="container">
+    <div class="panel-group">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse"  title="Boton para crear Sugerencia" href="#collapse1">Crear Sugerencias</a> &nbsp;&nbsp;
+            <a data-toggle="collapse"  title="Boton 	desplegar adminstrador de comentarios" href="#collapse2">Administrar Comentarios</a>  
+          </h4>
+        </div>
+		  <div id="collapse2" class="panel-collapse collapse">
+			    <div class="panel-body">
+					 <h5  class="Descripcion">
+						 <form action="zami/bosques/eliminarcorreo.html" methos="post">
+					<button class="button button1" style='width:100px; height:30px' >Bosques</button></form>	
+						 <form action="zami/camping/eliminarcorreo.html" methos="post">
+					<button class="button button1"style='width:100px; height:30px'>Camping</button></form>
+						  <form action="zami/lagunas/eliminarcorreo.html" methos="post">
+					<button class="button button1" style='width:100px; height:30px'>Lagunas</button> </form>
+						  <form action="zami/montañas/eliminarcorreo.html" methos="post">
+					<button class="button button1" style='width:100px; height:30px'>Montañas</button> </form>
+						  <form action="zami/reservas/eliminarcorreo.html" methos="post">
+					<button class="button button1" style='width:100px; height:30px'>Reservas</button> </form>
+						 <form action="zami/rios/eliminarcorreo.html" methos="post">
+					<button class="button button1" style='width:100px; height:30px'>Rios</button> </form>
+					</h5>
+					</div>
+							
+			
+			</div>  
+        <div id="collapse1" class="panel-collapse collapse">
+          <div class="panel-body">
+   <h5  class="Descripcion">
+    <label class="label-Texto"> Ingresar Nombre del lugar &nbsp;</label>
+    <input type="text" >
+    <br>
+                <label class="label-Texto"> Insertar Imagen &nbsp;&nbsp; &nbsp;&nbsp;
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                  
+                
+                <button class="button button1" >Agregar Imagen</button>
+                <br>
+	     <br>
+                <label class="label-Texto"> Elegir Tipo del lugar  &nbsp;&nbsp; &nbsp;&nbsp;
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   </label>
+                <select >
+                    <option class="select-selecionarLugares" value="cascadas">Lagunas</option>
+                    <option class="select-selecionarLugares" value="cascadas">Cascadas</option>
+                    <option class="select-selecionarLugares" value="rios">Rios</option>
+                    <option  class="select-selecionarLugares"  value="bosques/Montañas">Bosques/Montañas</option>
+                  </select>
+                  <br>
+	     <br>
+                  <label class="label-Texto">Agregar informacion "Recuerda Que" </label>
+                  <br>
+                  <textarea class="textarea-contenido" rows="4" cols="75">
+                    </textarea>
+                    <br>
+                    <label  class="label-Texto">Agregar informacion "No olvides" </label>
+                  <br>
+                  <textarea class="textarea-contenido" rows="4" cols="75">
+                    </textarea>
+                    <br>
+                    <button class="button button1btn-acceso">Crear Recomendacion</button>
+                  </h5>
+  
+  </div>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<div class="containerTable">  
+<div style="overflow-x:auto;">
+    <table class="table-contenido">
+        <tr>
+          <th class=" th th-Tabla">Nombre del Lugar</th>
+          <th class=" th th-Tabla">Imagen</th>
+          <th class=" th th-Tabla">Descripcion</th>
+          <th class=" th th-Tabla">Opciones</th>
+        </tr>
+        <tr>
+          <td><label class="label-Tabla">Yaguarcocha</label></td>
+          <td><img src="images/laguna.jpg"  width="150" height="150"></td>
+          <td>  <label class="label-Descripcion">¿Recuerda que?
+        <br>
+        <h5 class="Descripcion">
+        El lugar al que se va esta ubicado a 3800 metros sobre el nivel del mar
+        de altitud por lo que se recomienda llevar ropa abrigada e
+        impermeable ya que el clima es impredecible <br>
+        <br>
+        <br>
+      </h5>  </label>
+          <td>
+			  <button type="button" title="Editar" class="btn btn-Options" data-toggle="modal" data-target="#myModal"><i class="fa fa-edit"></i></button>
+			  
+            <br>
+            <br>
+            <button type="button" title="Eliminar" class="btn btn-Options" data-toggle="modal" onclick="myFunction() "><i class="fa fa-trash"></i></button>
+            </td>
+          </tr>
+      </table>
+
+
+      <div id="myModal" class="modal">
+        
+		    <div class="modal-content">        
+          <p><div class="content">
+            <div class="panel-group">     
+				<div class="topnav topnav-Titulo">
+  <button class="btn-close" data-dismiss="modal" float="center" style="font-size:150%" id="btnEditar" ><i class="fa fa-close"></i></button>
+  
+ <h3 >Editar Pagina</h3>
+
+</div>
+				<br>
+	 <label class="label-Texto"> Ingresar Nombre del lugar &nbsp;</label>
+    <input type="text" >
+    <br>
+                <label class="label-Texto"> Insertar Imagen &nbsp;&nbsp; &nbsp;&nbsp;
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                  
+                
+                <button class="button button1" >Agregar Imagen</button>
+                <br>
+                <label class="label-Texto"> Elegir Tipo del lugar  &nbsp;&nbsp; &nbsp;&nbsp;
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   </label>
+                <select >
+                    <option class="select-selecionarLugares" value="cascadas">Lagunas</option>
+                    <option class="select-selecionarLugares" value="cascadas">Cascadas</option>
+                    <option class="select-selecionarLugares" value="rios">Rios</option>
+                    <option  class="select-selecionarLugares"  value="bosques/Montañas">Bosques/Montañas</option>
+                  </select>
+                  <br>
+                  <label class="label-Texto">Agregar informacion "Recuerda Que" </label>
+                  <br>
+                  <textarea class="textarea-contenido" rows="4" cols="75">
+                    </textarea>
+                    <br>
+                    <label  class="label-Texto">Agregar informacion "No olvides" </label>
+                  <br>
+                  <textarea class="textarea-contenido" rows="4" cols="75">
+                    </textarea>
+                    <br>
+                    <button class="button button1">Crear Recomendacion</button>
+				
+				
+	</div>
+    </div>
+				</p>
+      </div>
+    </div>
+  </div>
+   <div class="modal fade" id="myModalEdit">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+		  <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <div class="modal-header">
+          <h4 class="modal-title"><label class="label-Precaucion"><i>&nbsp;&nbsp;<i class="fa fa-exclamation-triangle "></i></i></label>&nbsp;&nbsp;Desea eliminar?</h4>
+			
+          
+        </div>
+        
+     
+
+<div>
+	<label></label>
+	<br>&nbsp;&nbsp;&nbsp;
+          <button class="btn-confirmacion" data-dismiss="modal">Si</button>&nbsp;&nbsp;&nbsp;
+			<button class="btn-confirmacion" data-dismiss="modal">No</button>
+	<br>
+	<br>
+</div>
+	
+
+      
+        
+      </div>
+    </div>
+  </div>
+  
+  
+  <script>
+    //comentarioen script<a href="advertencia.html"> </a>
+    function myFunction(){
+      var txt;
+      var r=confirm("Desea eliminar el comentario");
+      if (r==true) {
+        return true;
+      }
+      else{
+        return false;
+      }
+
+    }
+  </script>
+  
+</tr>
+
+
+
+
+
+	</div>
+</body>
+</html>
